@@ -1,9 +1,53 @@
 * {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif; /*Aquí porque solo se utiliza una familia tipográfica*/
+    box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
     --menu-text: #4a4a4a;
     --background: #3CDBC0;
     --main-text: #FFFFFF;
+}
+.header {
+    background-color: var(--main-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo {
+    width: 155px;
+    height: 61px;
+    margin: 10px;
+}
+.nav {
+    color: var(--menu-text);
+    margin-top: 10px;
+}
+.span {
+    margin-left: 20px;
+    margin-bottom: 13px; 
+}
+.main {
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-slogan {
+    width: 50%;
+    margin-top: 50px;     
+    color: var(--main-text);
+}
+.main-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+@media all and (min-width: 768px) {
+
 }
