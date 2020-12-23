@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
 }
-
 :root {
     --menu-text: #4a4a4a;
     --background: #3CDBC0;
@@ -19,33 +18,31 @@
     width: 100%;
 }
 .logo {
-    width: 155px;
-    height: 61px;
+
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.nav {
+    margin-bottom: 13px;
 }
 .span {
     color: var(--menu-text);
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 13px;
     font-size: 1rem;
     text-align: center;
-    
 }
 .main {
-    height: 100vh;
+    height: 100vh; /*Aumentando este valor se aprecia que el header está fijo*/
     background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.main-slogan {
-    width: 50%;
-    margin-top: 50px;     
-    color: var(--main-text);
-}
 .main-title {
+    width: 200px;
+    padding-top: 50px;
+    color: var(--main-text);
     text-align: center;
     font-size: 30px;
 }
@@ -65,7 +62,7 @@
         margin-bottom: 20px;
     }
     .main-title {
+        padding-top: 200px;
         font-size: 40px;
     }
-
 }
