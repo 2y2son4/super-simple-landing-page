@@ -15,24 +15,29 @@
 .logo {
     margin: 10px 0px;
 }
-.nav {
+.mother-list {
     margin-bottom: 13px;
+    display: flex;
+    padding-inline-start: 0;
 }
-.span {
+.list {
     color: var(--menu-text);
     margin: 0px 10px;
     font-size: 1rem;
     text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
 }
 .links {
     text-decoration: none;
     color: var(--menu-text);
+    padding: 10px 0 10px 0;
 }
 .links:hover {
     color: var(--brand-color);
 }
 .main {
-    height: 100vh; /*Aumentando este valor se aprecia que el header está fijo*/
+    height: 100vh; 
     background-color: var(--brand-color);
     display: flex;
     justify-content: center;
@@ -44,11 +49,11 @@
     color: var(--white);
     text-align: center;
     font-size: 1.875rem;
+    text-transform: capitalize;
 }
 
 @media all and (min-width: 768px) {
     .header {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 30px;
@@ -59,7 +64,7 @@
     .main-title {
         font-size: 2.5rem;
     }
-    .nav {
+    .mother-list {
         margin-bottom: 0;
     }
 }
